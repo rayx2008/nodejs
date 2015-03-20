@@ -1,0 +1,31 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+        link(rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css")
+        link(rel="stylesheet" href="/stylesheets/bootstrap-image-gallery.min.css")
+    body(style='background:black')
+        div(class="navbar navbar-inverse navbar-fixed-top" )
+            div(class='container')
+                div(class='navbar-header')
+                    button(class='navbar-toggle collapsed' data-toggle="collapse" data-target=".navbar-collapse")
+                        span(class='sr-only')='Toggle navigation'
+                        span(class='icon-bar')
+                        span(class='icon-bar')
+                        span(class='icon-bar')
+                    a(class='navbar-brand' href='#')='My little star'
+                div(class='collapse navbar-collapse' style='height: 1px;')
+                    ul(class='nav navbar-nav')
+                        li
+                            a(href='#')='Home'
+                        li
+                            a(href='#')='About'
+            div( style='background-image: url(/images/top_bg3.jpg);background-position: center 0;background-size: cover;height:200px' )
+
+        block content
+        script(src='http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js')
+        script(src='/bootstrap.js')
+        script(src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js")
+        script(src="/bootstrap-image-gallery.min.js")
